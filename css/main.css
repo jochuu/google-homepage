@@ -1,20 +1,46 @@
+html,
 body {
   font-family: arial, sans-serif;
   font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+header,
+main,
+footer {
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+main {
+  margin: auto;
+  flex-grow: 1;
+}
+
+footer {
+  padding-bottom: 35px;
+  background: #f2f2f2;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-li {
-  display: inline-flex;
+
+a {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  color: #222;
 }
+
 .container {
   display: flex;
   flex-direction: column;
-  height: auto;
+  align-items: stretch;
+  min-height: 100%;
 }
 
 .item {
@@ -22,9 +48,9 @@ li {
   padding: 6px;
 }
 
-.header {
-  margin: auto;
-  padding: 6px;
+.google-sign-in {
+  flex-grow: 1;
+  padding-left: 70vw;
 }
 
 .search-box {
@@ -68,4 +94,8 @@ li {
   text-align: center;
   cursor: pointer;
   user-select: none;
+}
+
+.footer {
+  display: flex;
 }
