@@ -45,7 +45,9 @@ a {
 
 .item {
   margin: auto;
-  padding: 6px;
+  justify-content: center;
+  padding: 5px;
+  flex-grow: 1;
 }
 
 .google-sign-in {
@@ -53,21 +55,26 @@ a {
   padding-left: 70vw;
 }
 
+.google-logo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 .search-box {
   background: #fff;
   display: flex;
   border: 1px solid #dfe1e5;
-  border-radius: 24px;
-  z-index: 3;
-  height: 30px;
+  border-radius: 25px;
+  width: 50vw;
+  height: 35px;
   margin: 0 auto;
-  width: auto;
 }
 
 .search-input {
   background-color: transparent;
   border: none;
-  margin: 0 15px;
+  margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.87);
   word-wrap: break-word;
@@ -76,6 +83,19 @@ a {
   flex: 100%;
   margin-top: 0;
   font-size: 16px;
+}
+
+.google-icon {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  color: #9aa0a6;
+}
+
+.button-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
