@@ -51,6 +51,8 @@ a {
 }
 
 .google-sign-in {
+  display: flex;
+  justify-content: end;
   flex-grow: 1;
   padding-left: 60vw;
 }
@@ -58,6 +60,7 @@ a {
 .logo-circle {
   border-radius: 50%;
   height: 30px;
+  margin: 0 5px 0 15px;
 }
 
 .google-logo {

@@ -43,12 +43,31 @@
         <div class="item">
           <div class="search-box">
             <span class="material-icons-outlined google-icon"> search </span>
-            <!-- <img class="search-icon" src="images/google-search.png" alt="" /> -->
-            <input class="search-input" name="searchbox" type="text" />
+            <input
+              class="search-input"
+              id="searchbox"
+              value=""
+              type="text"
+              onkeyup="var showClear = function() { 
+                  let searchbox = document.getElementById('searchbox');
+                  let clearicon = document.getElementById('clear');
+                  if(searchbox.value !== '') { 
+                      clearicon.style.display = 'flex';
+                      } else {
+                        clearicon.style.display = 'none';
+                      }
+                      }; showClear()"
+            />
             <span
+              id="clear"
               class="material-icons-outlined google-icon"
-              style="cursor: pointer"
-              onclick="alert('this will clear text')"
+              style="cursor: pointer; display: none"
+              onclick="var clearSearchbox = function() {
+                  let searchbox = document.getElementById('searchbox');
+                  let clearicon = document.getElementById('clear');
+                  searchbox.value = ''; 
+                  clearicon.style.display= 'none'; 
+                   }; clearSearchbox();"
             >
               clear
             </span>
@@ -77,4 +96,5 @@
       </footer>
     </div>
   </body>
+  <script type="text/javascript"></script>
 </html>
