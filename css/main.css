@@ -52,7 +52,12 @@ a {
 
 .google-sign-in {
   flex-grow: 1;
-  padding-left: 70vw;
+  padding-left: 60vw;
+}
+
+.logo-circle {
+  border-radius: 50%;
+  height: 30px;
 }
 
 .google-logo {

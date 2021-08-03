@@ -18,7 +18,18 @@
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Store</a></li>
-            <div class="google-sign-in">Google sign in stuff here</div>
+            <div class="google-sign-in google-icon">
+              <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+
+                <span class="material-icons-outlined"> apps </span>
+                <img
+                  class="logo-circle"
+                  src="https://avatars.githubusercontent.com/u/7316833?v=4"
+                />
+              </ul>
+            </div>
           </ul>
         </nav>
       </header>
@@ -34,7 +45,13 @@
             <span class="material-icons-outlined google-icon"> search </span>
             <!-- <img class="search-icon" src="images/google-search.png" alt="" /> -->
             <input class="search-input" name="searchbox" type="text" />
-            <span class="material-icons-outlined google-icon"> clear </span>
+            <span
+              class="material-icons-outlined google-icon"
+              style="cursor: pointer"
+              onclick="alert('this will clear text')"
+            >
+              clear
+            </span>
           </div>
 
           <div class="item button-container">
